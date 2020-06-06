@@ -7,12 +7,12 @@ function App() {
   return (
     <div className="App">
       <FlatLand
-        assets={['/64x64.png']}
+        assets={['https://yambal.github.io/react-flatland/64x64.png']}
       >
-        <Sprite url={'/64x64.png'} x={0} y={0} frame={0}/>
-        <Sprite url={'/64x64.png'} x={32} y={0} frame={1}/>
-        <Sprite url={'/64x64.png'} x={0} y={32} frame={2}/>
-        <Sprite url={'/64x64.png'} x={32} y={32} frame={3}/>
+        <Sprite url={'https://yambal.github.io/react-flatland/64x64.png'} x={0} y={0} frame={0}/>
+        <Sprite url={'https://yambal.github.io/react-flatland/64x64.png'} x={32} y={0} frame={1}/>
+        <Sprite url={'https://yambal.github.io/react-flatland/64x64.png'} x={0} y={32} frame={2}/>
+        <Sprite url={'https://yambal.github.io/react-flatland/64x64.png'} x={32} y={32} frame={3}/>
       </FlatLand>
     </div>
   );
