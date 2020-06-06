@@ -1,7 +1,7 @@
 import * as React from 'react'
 import { AssetProvider } from './AssetProvider'
 
-interface iFlatland {
+export interface iFlatland {
   width?: number
   height?: number
   assets?: string[]
