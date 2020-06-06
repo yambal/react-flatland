@@ -1,5 +1,5 @@
 import * as React from 'react'
-import { Entity } from './Entity'
+// import { Entity } from './Entity'
 import styled from 'styled-components'
 import { AssetContext } from './AssetProvider'
 
