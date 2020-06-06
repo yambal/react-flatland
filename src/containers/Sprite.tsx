@@ -67,7 +67,7 @@ export const Sprite: React.FC<iSprite> = props => {
         setAssetUrl(asset.url)
       }
     },
-    [url, assets]
+    [url, assets, width, height]
   )
 
   React.useEffect(
