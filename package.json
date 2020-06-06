@@ -1,6 +1,6 @@
 {
   "name": "@yambal/react-flatland",
-  "version": "0.0.1",
+  "version": "0.0.2",
   "private": false,
   "dependencies": {
     "@babel/core": "7.9.0",
@@ -151,7 +151,7 @@
       "react-app"
     ]
   },
-  "main": "dist/main.js",
+  "main": "dist/flatland.js",
   "peerDependencies": {
     "react": "^16.13.1",
     "styled-components": "^5.1.1"
