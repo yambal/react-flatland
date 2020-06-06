@@ -1,5 +1,5 @@
 {
-  "name": "@yambel/react-flatland",
+  "name": "@yambal/react-flatland",
   "version": "0.0.1",
   "private": false,
   "dependencies": {
@@ -155,5 +155,17 @@
   "peerDependencies": {
     "react": "^16.13.1",
     "styled-components": "^5.1.1"
-  }
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/yambal/react-flatland.git"
+  },
+  "author": "June YAMAMOTO <jy@yambal.net> (https://www.yambal.net/)",
+  "description": "React Flatland",
+  "bugs": {
+    "url": "https://github.com/yambal/react-flatland/issues"
+  },
+  "homepage": "https://github.com/yambal/react-flatland#readme",
+  "devDependencies": {},
+  "license": "ISC"
 }
