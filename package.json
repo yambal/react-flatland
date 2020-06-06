@@ -76,6 +76,7 @@
     "build": "node scripts/build.js",
     "test": "node scripts/test.js",
     "pack": "webpack --config src/npm/webpack.config.js",
+    "predeploy": "npm run build",
     "dist:clear": "rimraf dist",
     "dist:build": "tsc --project ./tsconfig.dist.json",
     "dist": "run-s dist:clear dist:build",
