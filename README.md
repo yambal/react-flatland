@@ -1,3 +1,3 @@
 # Parallel
 
-[pages](https://github.com/yambal/react-flatland)
+[Demo Page](https://yambal.github.io/react-flatland/)
