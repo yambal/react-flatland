@@ -152,6 +152,7 @@
       "react-app"
     ]
   },
+  "devDependencies": {},
   "main": "dist/flatland.js",
   "peerDependencies": {
     "react": "^16.13.1",
@@ -167,6 +168,5 @@
     "url": "https://github.com/yambal/react-flatland/issues"
   },
   "homepage": "https://github.com/yambal/react-flatland#readme",
-  "devDependencies": {},
   "license": "ISC"
 }
