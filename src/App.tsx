@@ -1,24 +1,19 @@
 import React from 'react';
 import logo from './logo.svg';
-import './App.css';
+import { FlatLand } from './containers/Flatland'
+import { Sprite } from './containers/Sprite';
 
 function App() {
   return (
     <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.tsx</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+      <FlatLand
+        assets={['/64x64.png']}
+      >
+        <Sprite url={'/64x64.png'} x={0} y={0} frame={0}/>
+        <Sprite url={'/64x64.png'} x={32} y={0} frame={1}/>
+        <Sprite url={'/64x64.png'} x={0} y={32} frame={2}/>
+        <Sprite url={'/64x64.png'} x={32} y={32} frame={3}/>
+      </FlatLand>
     </div>
   );
 }
