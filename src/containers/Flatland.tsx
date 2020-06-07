@@ -1,6 +1,6 @@
 import * as React from 'react'
-import { AssetProvider } from './AssetProvider'
-import { FrameProvider } from './FrameProvider'
+import { AssetProvider } from '../Provider/AssetProvider'
+import { FrameProvider } from '../Provider/FrameProvider'
 import { Fps } from './Fps'
 
 export interface iFlatland {

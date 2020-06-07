@@ -1,8 +1,8 @@
 import * as React from 'react'
 // import { Entity } from './Entity'
 import styled from 'styled-components'
-import { AssetContext } from './AssetProvider'
-import { FrameContext } from './FrameProvider'
+import { AssetContext } from '../Provider/AssetProvider'
+import { FrameContext } from '../Provider/FrameProvider'
 
 interface iSprite{
   x?: number
