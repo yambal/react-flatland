@@ -2,7 +2,9 @@ import * as React from 'react'
 // import { Entity } from './Entity'
 import styled from 'styled-components'
 import { AssetContext } from '../Provider/AssetProvider'
-import { FrameContext } from '../Provider/FrameProvider'
+// import { FrameContext } from '../Provider/FrameProvider'
+// import { ClipPathPortal } from './Portal/ClipPathPortal'
+import { v4 as uuidv4 } from 'uuid';
 
 interface iSprite{
   x?: number
@@ -33,12 +35,17 @@ interface iAssetFrameMatrix {
   y: number
 }
 
+interface iSpriteState {
+  uuid: string
+}
+
 export const Sprite: React.FC<iSprite> = props => {
   const assets = React.useContext(AssetContext)
   //const _frame = React.useContext(FrameContext)
 
   const { x = 0, y = 0, width = 32, height = 32, url, frame = 0 } = props
 
+  const [uuid, setUuid] = React.useState(uuidv4())
   const [assetUrl, setAssetUrl] = React.useState('')
   const [assetWidth, setAssetWidth] = React.useState(width)
   const [assetHeight, setAssetHeight] = React.useState(height)
@@ -87,16 +94,24 @@ export const Sprite: React.FC<iSprite> = props => {
   console.log('render')
 
   return (
-    <_Sprite
-      width={assetWidth}
-      height={assetHeight}
-      clipHeight={width}
-      clipWidth={height}
-      clipLeft={clipLeft}
-      clipTop={clipTop}
-      x={x-clipLeft}
-      y={y-clipTop}
-      xlinkHref={assetUrl}
-    />
+    <React.Fragment>
+      {/*
+        <ClipPathPortal id={uuid} >
+          <rect x={x} y={y} width={width} height={height} />
+        </ClipPathPortal>
+      */}
+      <_Sprite
+        width={assetWidth}
+        height={assetHeight}
+        clipHeight={width}
+        clipWidth={height}
+        clipLeft={clipLeft}
+        clipTop={clipTop}
+        x={x-clipLeft}
+        y={y-clipTop}
+        xlinkHref={assetUrl}
+        onClick={()=>{console.log(uuid)}}
+      />
+    </React.Fragment>
   )
 }

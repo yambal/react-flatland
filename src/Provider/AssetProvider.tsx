@@ -45,7 +45,7 @@ export const AssetProvider: React.FC<iAssetProvider> = props => {
         }
       )
       Promise.all(assetLoaders).then((values) => {
-        console.log(values)
+        console.log(`assets`, values)
         setAssetLib(values)
       });
     },

@@ -2,6 +2,7 @@ import * as React from 'react'
 import { AssetProvider } from '../Provider/AssetProvider'
 import { FrameProvider } from '../Provider/FrameProvider'
 import { Fps } from './Fps'
+import { DefPortalContainer } from './Portal/DefPortalContainer'
 
 export interface iFlatland {
   width?: number
@@ -31,7 +32,7 @@ export const FlatLand: React.FC<iFlatland> = props => {
           height={height}
           viewBox={`0 0 ${width} ${height}`}
         >
-          
+          <DefPortalContainer />
           {props.children}
           <Fps />
         </svg>
