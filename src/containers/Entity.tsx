@@ -21,6 +21,7 @@ export const Entity: React.FC<iEntity> = props => {
       height={height}
       className={className}
     >
+      
       {props.children}
     </_Entity>
   )

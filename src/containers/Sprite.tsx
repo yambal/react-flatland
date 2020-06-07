@@ -2,6 +2,7 @@ import * as React from 'react'
 // import { Entity } from './Entity'
 import styled from 'styled-components'
 import { AssetContext } from './AssetProvider'
+import { FrameContext } from './FrameProvider'
 
 interface iSprite{
   x?: number
@@ -34,6 +35,8 @@ interface iAssetFrameMatrix {
 
 export const Sprite: React.FC<iSprite> = props => {
   const assets = React.useContext(AssetContext)
+  //const _frame = React.useContext(FrameContext)
+
   const { x = 0, y = 0, width = 32, height = 32, url, frame = 0 } = props
 
   const [assetUrl, setAssetUrl] = React.useState('')
@@ -80,6 +83,8 @@ export const Sprite: React.FC<iSprite> = props => {
     },
     [assetFrameMatrix, frame]
   )
+
+  console.log('render')
 
   return (
     <_Sprite
